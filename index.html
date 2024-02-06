@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+  </head>
+
+  <body>
+    <form action="result.html" method="get" enctype="multipart/form-data">
+      <div>
+        <label for="">Name</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <!--label for Name-->
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <!--label for Age-->
+      <div>
+        <label for="Age">Age</label>
+        <input type="number" name="Age" id="Age" min="1" max="25" step="2" />
+      </div>
+
+      <!--label for Date-->
+      <div>
+        <label for="date">Birthday</label>
+        <input type="date" name="date" id="name" min="2019-08-15" />
+      </div>
+
+      <!--label for checkbox-->
+      <div>
+        Favorite Food
+        <div>
+          <label for="Banana">Banana</label>
+          <input type="checkbox" name="Banana" id="Banana" />
+        </div>
+        <div>
+          <label for="Apple">Apple</label>
+          <input type="checkbox" name=" Apple" id="Apple" />
+        </div>
+      </div>
+      <!--label for Radio-->
+      <div>
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="Gender" id="male" value="male" />
+        </div>
+        <div>
+          <label for="Female">Female</label>
+          <input type="radio" name="Gender" id="Female" value="Female" />
+        </div>
+      </div>
+      <!--label for Option-->
+      <div>
+        <label for="eyeColor">Eye color</label>
+        <select name="eyeColor" id="eyeColor" multiple>
+          <option value="Green">Green</option>
+          <option label="Red" value="Red">Red</option>
+        </select>
+      </div>
+      <!--label for Textarea-->
+      <div>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio"></textarea>
+      </div>
+      <!--label for Hidden-->
+      <input type="hidden" name="hidden" value="hidden" />
+      <!--label for File-->
+      <div>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <!--label for Tel-->
+      <div>
+        <label for="phone">phone</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+      <!--label for URL-->
+      <div>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url" />
+      </div>
+      <!--label for Color-->
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <!--label for password-->
+      <div>
+        <label>
+          Password
+          <input type="Password" name="Password" required />
+        </label>
+      </div>
+      <!--label for button-->
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
